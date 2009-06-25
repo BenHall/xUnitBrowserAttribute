@@ -1,4 +1,4 @@
-Browser attribute for xUnit. 
+Browser attribute for xUnit and WatiN. 
 
 The aim is to make your cross browser tests more reusable by moving the logic of creating the browser object into an attribute. 
 
@@ -20,3 +20,5 @@ For example, the code below will start three different tests - one for each brow
             Assert.True(browser.ContainsText("The Official Microsoft ASP.NET Site"));
         }
     }
+
+NOTE: This will only work with the WatiN library.
