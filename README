@@ -1,0 +1,22 @@
+Browser attribute for xUnit. 
+
+The aim is to make your cross browser tests more reusable by moving the logic of creating the browser object into an attribute. 
+
+You can define multiple Browser attributes, each one which start an instance of the browser and execute the test. 
+
+For example, the code below will start three different tests - one for each browser which can pass\fail indepently to provide you with accurate results.
+
+    public class Example
+    {
+        [Theory]
+        [Browser("IE")]
+        [Browser("FireFox")]
+        [Browser("Chrome")]
+        public void Should_Click_Search_On_Google_And_Return_Results_For_AspNet(Browser browser)
+        {
+            browser.GoTo("http://www.google.co.uk");
+            browser.TextField(Find.ByName("q")).Value = "asp.net";
+            browser.Button(Find.ByName("btnG")).Click();
+            Assert.True(browser.ContainsText("The Official Microsoft ASP.NET Site"));
+        }
+    }
