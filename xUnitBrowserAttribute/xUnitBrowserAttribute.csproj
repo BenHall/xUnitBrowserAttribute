@@ -31,9 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Interop.SHDocVw, Version=1.1.0.0, Culture=neutral, PublicKeyToken=db7cfd3acb5ad44e, processorArchitecture=MSIL">
+    <Reference Include="Interop.SHDocVw, Version=1.1.0.0, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Libs\WatiN\Interop.SHDocVw.dll</HintPath>
+      <HintPath>..\Libs\Interop.SHDocVw.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -47,17 +47,17 @@
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="WatiN.Core, Version=2.0.3.913, Culture=neutral, PublicKeyToken=db7cfd3acb5ad44e, processorArchitecture=x86">
+    <Reference Include="WatiN.Core, Version=2.0.0.1000, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Libs\WatiN\WatiN.Core.dll</HintPath>
+      <HintPath>..\Libs\WatiN.Core.dll</HintPath>
     </Reference>
     <Reference Include="xunit, Version=1.1.0.1323, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Libs\xUnit\xunit.dll</HintPath>
+      <HintPath>..\Libs\xunit.dll</HintPath>
     </Reference>
     <Reference Include="xunit.extensions, Version=1.1.0.1323, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Libs\xUnit\xunit.extensions.dll</HintPath>
+      <HintPath>..\Libs\xunit.extensions.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
